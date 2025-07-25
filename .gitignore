@@ -1,0 +1,11 @@
+# Virtual environment & caches
+venv/
+.venv/
+__pycache__/
+
+# Secrets
+.env
+
+# IDE specific
+.vscode/
+.idea/

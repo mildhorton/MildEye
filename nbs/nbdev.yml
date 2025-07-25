@@ -1,0 +1,9 @@
+project:
+  output-dir: _docs
+
+website:
+  title: "MildEye"
+  site-url: "https://mildhorton.github.io/MildEye"
+  description: "A web application for passive residual income."
+  repo-branch: main
+  repo-url: "https://github.com/mildhorton/MildEye"
