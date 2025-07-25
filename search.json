@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MildEye",
+    "section": "",
+    "text": "If you got here, i guess something was interesting.",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "index.html#imposter-cheatsheet-guide",
+    "href": "index.html#imposter-cheatsheet-guide",
+    "title": "MildEye",
+    "section": "Imposter Cheatsheet Guide",
+    "text": "Imposter Cheatsheet Guide\nIf you struggled in a homeless foodline or begged for some money i hope this helps..!\n\nInstall MildEye in Development mode\n# make sure MildEye package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to MildEye\n$ nbdev_prepare",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "MildEye",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/mildhorton/MildEye.git\nor from conda\n$ conda install -c mildhorton MildEye\nor from pypi\n$ pip install MildEye\n\n\nDocumentation\nDocumentation can be found hosted on this GitHub repository’s pages. Additionally you can find package manager specific guidelines on conda and pypi respectively.",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "MildEye",
+    "section": "How to use",
+    "text": "How to use\nFill me in please! Don’t forget code examples:\n\nfrom fasthtml.common import *\n\n# Initialize the application\napp,rt, = fast_app()\n\n# Define the root route\n@rt('/')\ndef get():\n    return Div(P('Hello World!'))\n\n# Run the app\nserve()\n\n\nfrom typing import Union\n\nfrom fastapi import FastAPI\n\n\napp = FastAPI()\n\n\n@app.get(\"/\")\ndef read_root():\n    return {\"Hello\": \"World\"}\n\n\n@app.get(\"/items/{item_id}\")\ndef read_item(item_id: int, q: Union[str, None] = None):\n    return {\"item_id\": item_id, \"q\": q}\n\nBad pipe message: %s [b'0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\\r\\nHost: localhost:41753\\r\\nUs', b'-Agent: Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0']\nBad pipe message: %s [b'.0 Safari/537.36\\r\\nAccept-Encoding: gzip, defl']\nBad pipe message: %s [b'e, br, zstd\\r\\nAccept-Language: en-US,en;q=0.9\\r\\nReferer: https://laughing-capybara-g94vjgrg69p2pvj']\nBad pipe message: %s [b'github.dev/\\r\\nX-Request-ID: 642f91f20095c358efe47c11c2c']\nBad pipe message: %s [b'e66\\r\\nX-Real-IP: 107.77.212.181\\r\\nX-Forwarded-Port']\nBad pipe message: %s [b'443\\r\\nX-Forwarded-Scheme: https\\r\\nX-Original-URI: /\\r\\nX-Sche']\nBad pipe message: %s [b': https\\r\\nsec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\";v=\"137\", \"Not/A)Brand\";v=\"24\"\\r\\nsec-ch-ua-mobile: ?0\\r', b'ec-ch-ua-', b'atform: \"Chrome OS\"\\r\\nDNT: 1\\r\\nsec-fetch-site: same-site\\r\\nsec-fetch-mode: navigate\\r\\nsec-fetch-user: ?1\\r\\nsec-fetch']\nBad pipe message: %s [b'est: document\\r\\npriority: u=0, i\\r\\nX-Original-']\nBad pipe message: %s [b'oto: https\\r\\nX-Forwarded-Proto: https\\r\\nX-Forwarded-Host: laughing-capybara-g94vj']\nBad pipe message: %s [b'0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7\\r\\nHost: localhost:41753\\r\\nUs', b'-Agent: Mozilla/5.0 (X11; CrOS x86_64 14541.0.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0']\nBad pipe message: %s [b'.0 Safari/537.36\\r\\nAccept-Encoding: gzip, defl']\nBad pipe message: %s [b'e, br, zstd\\r\\nAccept-Language: en-US,en;q=0.9\\r\\nReferer: https://laughing-capybara-g94vjgrg69p2pvj']\nBad pipe message: %s [b'github.dev/\\r\\nX-Request-ID: b62521efb3a3d8cb9c50d194298']\nBad pipe message: %s [b'99c\\r\\nX-Real-IP: 107.77.212.181\\r\\nX-Forwarded-Por']\nBad pipe message: %s [b' 443\\r\\nX-Forwarded-Scheme: https\\r\\nX-Original-URI: /\\r\\nX-Scheme: https\\r\\nsec-ch-ua: \"Google Chrome\";v=\"137\", \"Chromium\"']\nBad pipe message: %s [b'=\"137\", \"Not/A)Brand\";v=\"24\"\\r\\nsec-ch-ua-mobile: ?0\\r\\nsec-ch']\nBad pipe message: %s [b'a-platform: \"Chrome OS\"\\r\\nDNT: 1\\r\\nsec-fetch-s', b'e: same-site\\r\\nsec-fetch-mode: navigate\\r\\nsec-fetch-user: ?1\\r\\nsec-fetch-dest: document\\r\\npriority: u=0, i\\r\\n']\nBad pipe message: %s [b'Original-Proto: https\\r\\nX-Forwarded-Proto: https\\r\\nX-Forwarded-Host: laughing-capybara-g9', b'jgrg69p2pvj7-41753.app.github.dev\\r\\nX-Forwarded-For:']",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "core.html",
+    "href": "core.html",
+    "title": "core",
+    "section": "",
+    "text": "source\n\nfoo\n\n foo ()",
+    "crumbs": [
+      "core"
+    ]
+  }
+]
