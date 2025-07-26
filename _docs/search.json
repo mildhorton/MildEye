@@ -1,0 +1,52 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "MildEye",
+    "section": "",
+    "text": "If you got here, i guess something was interesting.",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "index.html#imposter-cheatsheet-guide",
+    "href": "index.html#imposter-cheatsheet-guide",
+    "title": "MildEye",
+    "section": "Imposter Cheatsheet Guide",
+    "text": "Imposter Cheatsheet Guide\nIf you struggled in a homeless foodline or begged for some money i hope this helps..!\n\nInstall MildEye in Development mode\n# make sure MildEye package is installed in development mode\n$ pip install -e .\n\n# make changes under nbs/ directory\n# ...\n\n# compile to have changes apply to MildEye\n$ nbdev_prepare",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "index.html#usage",
+    "href": "index.html#usage",
+    "title": "MildEye",
+    "section": "Usage",
+    "text": "Usage\n\nInstallation\nInstall latest from the GitHub repository:\n$ pip install git+https://github.com/mildhorton/MildEye.git\nor from conda\n$ conda install -c mildhorton MildEye\nor from pypi\n$ pip install MildEye",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-use",
+    "href": "index.html#how-to-use",
+    "title": "MildEye",
+    "section": "How to use",
+    "text": "How to use\n\nfrom fasthtml.common import *\n\n# Initialize the application\napp,rt, = fast_app()\n\n# Define the root route\n@rt('/')\ndef get():\n    return Div(P('Hello World!'))\n\n# Run the app\nserve()\n\n\nfrom typing import Union\n\nfrom fastapi import FastAPI\n\n\napp = FastAPI()\n\n\n@app.get(\"/\")\ndef read_root():\n    return {\"Hello\": \"World\"}\n\n\n@app.get(\"/items/{item_id}\")\ndef read_item(item_id: int, q: Union[str, None] = None):\n    return {\"item_id\": item_id, \"q\": q}",
+    "crumbs": [
+      "MildEye"
+    ]
+  },
+  {
+    "objectID": "index.html#api-routes",
+    "href": "index.html#api-routes",
+    "title": "MildEye",
+    "section": "API Routes",
+    "text": "API Routes\nHere are the main routes for the application.\n\n\nread_root\n\n read_root ()\n\nThe root endpoint provides a simple ‘Ahoy Mattie’ message.\n\n\n\nread_item\n\n read_item (item_id:int, q:Optional[str]=None)\n\nThis endpoint retrieves an item by its ID and an optional query parameter.",
+    "crumbs": [
+      "MildEye"
+    ]
+  }
+]
